@@ -1,0 +1,8 @@
+{
+  "name": "orcwood-com",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "8ceb58d7"
+}

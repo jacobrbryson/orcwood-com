@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "orcwood-com",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
