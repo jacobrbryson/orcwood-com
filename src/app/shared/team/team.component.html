@@ -1,0 +1,10 @@
+<ion-row>
+  <ion-col *ngFor="let member of team" size="12" size-md="6" size-lg="4" size-xl="3" class="ion-padding ion-text-center pb-5">
+      <img alt="{{ member.title }}" src="assets/{{ member.image }}" style="border-radius: 50%; width:50%" />
+      <ion-title>{{ member.position }}</ion-title>
+      <ion-card-subtitle>
+        "{{ member.title }}"
+      </ion-card-subtitle>
+      <ion-button *ngFor="let link of member.social"shape="round" href="{{ link.href }}" target="_blank"><ion-icon name="{{ link.icon }}"></ion-icon></ion-button>
+  </ion-col>
+</ion-row>

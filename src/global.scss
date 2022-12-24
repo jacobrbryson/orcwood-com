@@ -24,3 +24,26 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.pb-5{
+	padding-bottom:25px;
+}
+
+.pt-5{
+	padding-top:25px;
+}
+
+.py-5{
+	padding-bottom:25px;
+	padding-top:25px;
+}
+
+a:link {
+	text-decoration: inherit;
+	color: inherit;
+}
+
+a:visited {
+	text-decoration: inherit;
+	color: inherit;
+}

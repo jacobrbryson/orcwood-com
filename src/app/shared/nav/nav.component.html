@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      <a href="/" title="Home">
+        <span class="brand-logo">
+          Orcwood Games
+        </span>
+      </a>
+    </ion-title>
+    <ion-buttons slot="end" class="ion-padding-end">
+      <ion-button (click)="utilityService.goToLink('/games')">
+        Games
+      </ion-button>
+      <ion-button (click)="utilityService.goToLink('/team')">
+        Team
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

@@ -1,0 +1,14 @@
+<shared-nav></shared-nav>
+<ion-content>
+  <ion-slides *ngIf="game?.images" pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let image of game?.images">
+      <img src="assets/{{image.src}}" alt="{{ image?.alt ? image.alt : game?.title }}"/>
+    </ion-slide>
+  </ion-slides>
+  <shared-section-header [title]="game?.title" class="ion-text-center"></shared-section-header>
+  <ion-row class="ion-justify-content-center">
+    <ion-col class="ion-text-center" size="12" size-md="8" size-lg="6">
+      <p>{{ game?.description }}</p>
+    </ion-col>
+  </ion-row>
+</ion-content>
