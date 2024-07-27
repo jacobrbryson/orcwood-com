@@ -1,7 +1,9 @@
 steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['install']
-  - name: 'gcr.io/cloud-builders/ionic'
+
+  - name: 'gcr.io/cloud-builders/npm'
+    entrypoint: 'run'
     args: ['build']
 
 options:
