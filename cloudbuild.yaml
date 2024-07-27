@@ -12,4 +12,4 @@ artifacts:
   objects:
     location: 'gs://www-orcwood-com/'
     paths:
-      - 'build/**'
+      - 'www/**'
