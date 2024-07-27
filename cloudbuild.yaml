@@ -1,7 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run build']
-
 artifacts:
   objects:
     location: 'gs://www-orcwood-com/'
