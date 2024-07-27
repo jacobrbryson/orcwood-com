@@ -5,9 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class GameService {
 
-  constructor() { }
-
-  games: Game[] = [{
+  games: Game[] = [
+    {
+      key:"jurassic-hats",
+      image: "games/jurassic-hats/marketing/jh_icon_512x512.png",
+      title: "Jurassic Hats",
+      releaseDate: new Date("2023-07-01"),
+      description: "Explore the lost universe of Jurassic Hats.  Find diamonds and stars to unlock wands, hats, and even dinosaurs...",
+      link: "/games/jurassic-hats/",
+      images:[]
+    },
+    {
     key:"holiday-lockdown",
     image: "2020-10-30.png",
     title: "Holiday Lockdown",
