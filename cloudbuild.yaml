@@ -2,7 +2,7 @@ steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['install']
   - name: 'gcr.io/cloud-builders/npm'
-    args: ['ionic build']
+    args: ['build']
 
 options:
   logging: CLOUD_LOGGING_ONLY
