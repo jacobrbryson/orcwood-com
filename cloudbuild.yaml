@@ -3,8 +3,7 @@ steps:
     args: ['install']
 
   - name: 'gcr.io/cloud-builders/npm'
-    entrypoint: 'run'
-    args: ['build']
+    args: ['run', 'build']
 
 options:
   logging: CLOUD_LOGGING_ONLY
