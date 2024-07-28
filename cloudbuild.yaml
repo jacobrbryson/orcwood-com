@@ -6,7 +6,7 @@ steps:
     args: ['run', 'build']
 
   - name: 'gcr.io/cloud-builders/gsutil'
-  args: ['-m', 'cp', '-r', 'www/*', 'gs://www-orcwood-com/']
+    args: ['-m', 'cp', '-r', 'www/*', 'gs://www-orcwood-com/']
 
 options:
   logging: CLOUD_LOGGING_ONLY
