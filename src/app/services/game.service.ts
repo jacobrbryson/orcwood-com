@@ -7,6 +7,42 @@ export class GameService {
 
   games: Game[] = [
     {
+      key:"trivia-crawler",
+      image: "games/trivia-crawler/banner-square.jpg",
+      title: "Trivia Crawler",
+      releaseDate: new Date("2026-01-01"),
+      description: "Jackbox-ish dungeon crawler / turn-based RPG where your party answers trivia questions instead of dice rolls",
+      link: "/games/trivia-crawler/",
+      images:[]
+    },
+    {
+      key:"new-america",
+      image: "games/new-america/loading-screen.png",
+      title: "New America",
+      releaseDate: new Date("2026-01-01"),
+      description: "First-person offense and third-party real time strategy game based on Sega's 1990's first million player multiplayer game",
+      link: "/games/new-america/",
+      images:[]
+    },
+    {
+      key:"downside-up",
+      image: "games/downside-up/banner-square.jpg",
+      title: "Downside Up",
+      releaseDate: new Date("2025-01-01"),
+      description: "Arcade game where gravity is flipped on it's head",
+      link: "/games/downside-up/",
+      images:[]
+    },
+    {
+      key:"death-sentence",
+      image: "games/death-sentence/banner-square.jpg",
+      title: "Death Sentence",
+      releaseDate: new Date("2025-07-01"),
+      description: "Death Sentence is a thrilling co-op first-person objective focused extraction game",
+      link: "/games/death-sentence/",
+      images:[]
+    },
+    {
       key:"jurassic-hats",
       image: "games/jurassic-hats/marketing/jh_icon_512x512.png",
       title: "Jurassic Hats",
@@ -72,7 +108,7 @@ export class GameService {
 
 export interface Game {
   key:string,
-  image: string,
+  image: string | null,
   title: string,
   releaseDate?: Date,
   link?: string

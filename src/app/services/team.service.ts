@@ -71,6 +71,35 @@ export class TeamService {
       icon: "logo-linkedin",
       alt: "LinkedIn"
     }]
+  },{
+    key:"mike-wallace",
+    image:null,
+    name:"Mike Wallace",
+    position:"Systems Architect",
+    title:"Da Vinci",
+    social:[]
+  },{
+    key:"allen-clawson",
+    image:null,
+    name:"Allen Clawson",
+    position:"Game Designer",
+    title:"Claw",
+    social:[]
+  },{
+    key:"xeno-d",
+    image:null,
+    name:"XenoD",
+    position:"Developer",
+    title:"Xeno",
+    social:[]
+  },
+  {
+    key:"angel-slayer-ex",
+    image:null,
+    name:"AngelSlayerEX",
+    position:"Game Designer",
+    title:"Angel Slayer",
+    social:[]
   }];
 
   getTeam():Member[]{
@@ -81,12 +110,13 @@ export class TeamService {
 
 export interface Member {
   key: string;
-  image: string;
+  image: string | null;
   name: string;
   position: string;
   title: string;
   social: Social[]
 }
+
 export interface Social {
   icon: string;
   href: string;
