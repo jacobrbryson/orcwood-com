@@ -17,7 +17,7 @@ export class GameService {
     },
     {
       key:"new-america",
-      image: "games/new-america/loading-screen.png",
+      image: "games/new-america/banner-square.jpg",
       title: "New America",
       releaseDate: new Date("2026-01-01"),
       description: "First-person offense and third-party real time strategy game based on Sega's 1990's first million player multiplayer game",
@@ -26,7 +26,7 @@ export class GameService {
     },
     {
       key:"downside-up",
-      image: "games/downside-up/banner-square.jpg",
+      image: "games/downside-up/banner-square.png",
       title: "Downside Up",
       releaseDate: new Date("2025-01-01"),
       description: "Arcade game where gravity is flipped on it's head",
