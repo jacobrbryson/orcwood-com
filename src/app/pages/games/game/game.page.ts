@@ -10,6 +10,7 @@ import { Game, GameService } from 'src/app/services/game.service';
 export class GamePage {
 
   game:Game | undefined;
+
   constructor(
     private route: ActivatedRoute,
     private gameService: GameService

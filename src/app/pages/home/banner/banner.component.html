@@ -1,8 +1,36 @@
 <ion-row class="pb-5">
-  <ion-col size="12" size-md="4" size-xl="3" class="ion-padding">
+  <ion-col size="12" size-md="4" size-xl="3" class="ion-padding ion-col">
     <img src="assets/logo-og-games.svg" alt="Orcwood Logo"/>
   </ion-col>
-  <ion-col size="12" size-md="8" size-xl="9" class="ion-padding">
-    <iframe src="assets/downside-up/index.html" class="responsive-iframe"></iframe>
+  <ion-col size="12" size-md="8" size-xl="9" class="game-banner-du">
+    <div class="shaded">
+      <ion-row style="width:100%;height:100%;">
+        <ion-col size="12" size-md="4" class="flexContainer">
+          <div class="ion-padding ion-text-center">
+            Downside Up
+          </div>
+          <div class="ion-padding ion-text-center">
+            <ion-button (click)="utilityService.goToLink('/games/downside-up')">Play Now</ion-button>
+          </div>
+        </ion-col>
+        <ion-col size="12" size-md="8" style="padding:0;">
+          <div class="shaded">
+            <div class="ion-padding">
+              <strong>
+                High Scores
+              </strong>
+              <div class="ion-padding">
+                <div *ngFor="let highScore of highScores" class="flexItem">
+                  <span>{{ highScore.gamerTag }}</span>
+                  <span>{{ highScore.time }}</span>
+              </div>
+              </div>
+              
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+   
   </ion-col>
 </ion-row>

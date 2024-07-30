@@ -22,7 +22,7 @@ export class GameService {
       releaseDate: new Date("2026-01-01"),
       description: "First-person offense and third-party real time strategy game based on Sega's 1990's first million player multiplayer game",
       link: "/games/new-america/",
-      images:[]
+      images:[],
     },
     {
       key:"downside-up",
@@ -31,7 +31,8 @@ export class GameService {
       releaseDate: new Date("2025-01-01"),
       description: "Arcade game where gravity is flipped on it's head",
       link: "/games/downside-up/",
-      images:[]
+      images:[],
+      html5Url:"https://storage.googleapis.com/downside-up-game/index.html"
     },
     {
       key:"death-sentence",
@@ -108,12 +109,13 @@ export class GameService {
 
 export interface Game {
   key:string,
-  image: string | null,
+  image?: string,
   title: string,
   releaseDate?: Date,
   link?: string
   description: string,
-  images?: Image[]
+  images?: Image[],
+  html5Url?:string
 }
 
 export interface Image{
