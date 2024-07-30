@@ -76,7 +76,7 @@ export class TeamService {
     image:null,
     name:"Mike Wallace",
     position:"Systems Architect",
-    title:"Da Vinci",
+    title:"Ox",
     social:[]
   },{
     key:"allen-clawson",
