@@ -73,19 +73,36 @@ export class TeamService {
     }]
   },{
     key:"mike-wallace",
-    image:null,
+    image:"team/mike.jpg",
     name:"Mike Wallace",
     position:"Systems Architect",
     title:"Ox",
     social:[]
   },{
     key:"allen-clawson",
-    image:null,
+    image:"team/herikane.jpg",
     name:"Allen Clawson",
     position:"Game Designer",
     title:"Claw",
     social:[]
-  },{
+  },
+  {
+    key:"josh-green",
+    image:"team/josh.jpg",
+    name: "Josh Green",
+    position: "Software Engineer",
+    title:"",
+    social:[{
+      href: "https://github.com/JDSlimz",
+      icon: "logo-github",
+      alt: "Github"
+    },
+  { href: "https://www.linkedin.com/in/joshua-green-a4254b238",
+    icon: "logo-linkedin",
+    alt: "Linkedin"
+  }]
+  },
+  {
     key:"xeno-d",
     image:null,
     name:"XenoD",
