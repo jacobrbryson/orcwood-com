@@ -5,8 +5,11 @@ steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
 
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'cp', '-r', 'www/*', 'gs://www-orcwood-com/']
-
+#  - name: 'gcr.io/cloud-builders/gsutil'
+#    args: ['-m', 'cp', '-r', 'www/*', 'gs://www-orcwood-com/']
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
+  args: ['-c', 'gcloud app deploy app.yaml']
 options:
   logging: CLOUD_LOGGING_ONLY
