@@ -91,7 +91,7 @@ export class TeamService {
     image:"team/josh.jpg",
     name: "Josh Green",
     position: "Software Engineer",
-    title:"",
+    title:"UnexampledSalt",
     social:[{
       href: "https://github.com/JDSlimz",
       icon: "logo-github",
@@ -104,20 +104,12 @@ export class TeamService {
   },
   {
     key:"xeno-d",
-    image:null,
-    name:"XenoD",
+    image:"team/brendon.jpg",
+    name:"Brendon Alexander",
     position:"Developer",
     title:"Xeno",
     social:[]
-  },
-  {
-    key:"angel-slayer-ex",
-    image:null,
-    name:"AngelSlayerEX",
-    position:"Game Designer",
-    title:"Angel Slayer",
-    social:[]
-  }];
+  },];
 
   getTeam():Member[]{
     return this.team;
