@@ -20,10 +20,7 @@ export class GamePage {
   ) { 
     const gameKey = this.route.snapshot.paramMap.get('gameKey');
     this.game = this.gameService.getGames().find((game) => game.key == gameKey);
-    console.log( this.game?.projectManager);
     this.projectManager = this.teamService.getTeam().find((member) => member.key == this.game?.projectManager || "")
-    console.log(this.teamService.getTeam())
-    console.log(this.projectManager)
   }
 
   slideOpts = {
