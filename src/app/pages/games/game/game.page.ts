@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Game, GameService } from 'src/app/services/game.service';
+import { Member, TeamService } from 'src/app/services/team.service';
 
 @Component({
   selector: 'app-game',
@@ -10,13 +11,16 @@ import { Game, GameService } from 'src/app/services/game.service';
 export class GamePage {
 
   game:Game | undefined;
+  projectManager: Member | undefined;
 
   constructor(
     private route: ActivatedRoute,
-    private gameService: GameService
+    private gameService: GameService,
+    private teamService: TeamService
   ) { 
     const gameKey = this.route.snapshot.paramMap.get('gameKey');
     this.game = this.gameService.getGames().find((game) => game.key == gameKey);
+    this.projectManager = this.teamService.getTeam().find((member) => member.key == this.game?.projectManager || "")
   }
 
   slideOpts = {
