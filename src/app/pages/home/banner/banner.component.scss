@@ -1,5 +1,5 @@
 .game-banner-du{
-  background: no-repeat center/100% url("/assets/home/Upside_Down_6.gif");
+  background: no-repeat center/100% url("/assets/home/Upside_Down_8.gif");
   padding:0px;
 }
 
@@ -28,9 +28,9 @@
 
 .flipped{
   -moz-transform: scale(1, -1);
--webkit-transform: scale(1, -1);
--o-transform: scale(1, -1);
--ms-transform: scale(1, -1);
-transform: scale(1, -1);
-color: #C0C0C0;
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+  color: #C0C0C0;
 }

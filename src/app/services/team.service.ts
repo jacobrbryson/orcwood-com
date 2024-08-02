@@ -106,7 +106,7 @@ export class TeamService {
     key:"xeno-d",
     image:"team/brendon.jpg",
     name:"Brendon Alexander",
-    position:"Developer",
+    position:"Language Manager",
     title:"Xeno",
     social:[]
   },];
