@@ -47,3 +47,9 @@ a:visited {
 	text-decoration: inherit;
 	color: inherit;
 }
+
+.flex{
+	display:flex;
+	align-items: center;
+	gap:8px !important;
+}
