@@ -18,7 +18,7 @@ export class GameService {
       projectManagerKey: "jon-wilson-lee",
       resourceLinks: [
         {
-          url: "https://drive.google.com/drive/folders/1ZXgqRdHQJbZPHbgmJbwwYq7hiBFsGcKe",
+          url: "https://drive.google.com/drive/folders/1N22PJTwOUk3ROdLf2923f2hfSPeCqYE_",
           icon: "logo-google"
         },
         {
@@ -109,12 +109,12 @@ export class GameService {
       ]
     },
     {
-      key:"the-quarry-chapter-zero",
-      image: "games/the-quarry-chapter-zero/banner-square.jpg",
-      title: "The Quarry - Chapter 0",
+      key:"escape-cabin",
+      image: "games/escape-cabin/banner-square.jpg",
+      title: "Escape Cabin",
       releaseDate: new Date("2025-01-01"),
       description: "You wake up to find yourself trapped in an alpine cabin in the woods with no clear means of escape. You've lost your memory, but it seems you knew this might happen.  Follow the clues to escape and unlock the mystery within.",
-      link: "/games/the-quarry-chapter-zero/",
+      link: "/games/escape-cabin/",
       images:[],
       projectManagerKey: "jenny-wolfer",
       resourceLinks: [
