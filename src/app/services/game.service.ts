@@ -76,7 +76,17 @@ export class GameService {
       description: "Death Sentence is a thrilling co-op first-person objective focused extraction game",
       link: "/games/death-sentence/",
       images:[],
-      projectManagerKey: "allen-clawson"
+      projectManagerKey: "allen-clawson",
+      resourceLinks: [
+        {
+          url: "https://drive.google.com/drive/folders/1yqUmUFYlCH03HrSfFOLBg-cCRFI84hPw",
+          icon: "logo-google"
+        },
+        {
+          url: "https://orcwood.atlassian.net/jira/software/projects/DS/boards/1",
+          icon: "bar-chart-outline"
+        }
+      ]
     },
     {
       key:"jurassic-hats",
@@ -86,7 +96,17 @@ export class GameService {
       description: "Explore the lost universe of Jurassic Hats.  Find diamonds and stars to unlock wands, hats, and even dinosaurs...",
       link: "/games/jurassic-hats/",
       images:[],
-      projectManagerKey: "ross-bryson"
+      projectManagerKey: "ross-bryson",
+      resourceLinks: [
+        {
+          url: "https://drive.google.com/drive/folders/13FulS6tiIzlVpZj4SUc1cvbeJbazXsZA",
+          icon: "logo-google"
+        },
+        {
+          url: "https://orcwood.atlassian.net/jira/software/projects/JHAT/boards/3",
+          icon: "bar-chart-outline"
+        }
+      ]
     },
     {
       key:"the-quarry-chapter-zero",
@@ -96,7 +116,17 @@ export class GameService {
       description: "You wake up to find yourself trapped in an alpine cabin in the woods with no clear means of escape. You've lost your memory, but it seems you knew this might happen.  Follow the clues to escape and unlock the mystery within.",
       link: "/games/the-quarry-chapter-zero/",
       images:[],
-      projectManagerKey: "jenny-wolfer"
+      projectManagerKey: "jenny-wolfer",
+      resourceLinks: [
+        {
+          url: "https://drive.google.com/drive/folders/13rDyl6M1uh9momUFXDHGCYDGm8SOg1rw",
+          icon: "logo-google"
+        },
+        {
+          url: "https://orcwood.atlassian.net/jira/software/projects/TEC/boards/2",
+          icon: "bar-chart-outline"
+        }
+      ]
     },
     {
     key:"holiday-lockdown",
@@ -126,7 +156,17 @@ export class GameService {
     {
       src: "games/holiday-lockdown/hl_ss_7.jpg"
     }],
-    projectManagerKey: "jenny-wolfer"
+    projectManagerKey: "jenny-wolfer",
+    resourceLinks: [
+      {
+        url: "https://drive.google.com/drive/folders/1eF_ac6fHmYRr5o-hR0gAKv_P57-JeyQI",
+        icon: "logo-google"
+      },
+      {
+        url: "https://orcwood.atlassian.net/jira/software/projects/HL/boards/5",
+        icon: "bar-chart-outline"
+      }
+    ]
   },
   {
     key:"second-wind",
