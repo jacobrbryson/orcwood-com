@@ -1,36 +1,32 @@
 <shared-nav></shared-nav>
 <ion-content>
-  <shared-section-header [title]="game?.title" class="ion-text-center"></shared-section-header>
+  <shared-section-header [title]="game?.title"></shared-section-header>
   <ion-row>
-    <ion-col size="12" size-md="8">
+    <ion-col size="12" size-md="9">
       <ion-slides *ngIf="game?.images" pager="true" [options]="slideOpts">
         <ion-slide *ngFor="let image of game?.images">
           <img src="assets/{{image.src}}" alt="{{ image?.alt ? image.alt : game?.title }}"/>
         </ion-slide>
       </ion-slides>
-      <ion-row class="ion-text-center">
-        <ion-col size="12" size-md="10" size-xl="8" style="margin: auto" class="ion-padding">
           <div *ngIf="game?.html5Url" class="container">
             <iframe [src]="game?.html5Url ?? '' | safe: 'resourceUrl'" class="responsive-iframe"></iframe>
           </div>
-        </ion-col>
-      </ion-row>
       <ion-row class="ion-justify-content-center">
         <ion-col class="ion-text-center" size="12" size-md="8" size-lg="6">
           <p>{{ game?.description }}</p>
         </ion-col>
       </ion-row>
     </ion-col>
-    <ion-col size="12" size-md="4">
+    <ion-col size="12" size-md="3">
       <ion-row>
-        <ion-col size="12">
+        <ion-col size="12" class="ion-text-center">
           <h3>Project Manager</h3>
-          <div class="flex">
+          <div class="flex" style="justify-content:center">
             <img alt="{{ projectManager?.title }}" width="32" height="32" src="assets/{{ projectManager?.image ? projectManager?.image : 'person.jpg' }}" style="border-radius: 50%" />
             <ion-text>{{ projectManager?.name }}</ion-text>
           </div>
         </ion-col>
-        <ion-col size="12" *ngIf="game?.resourceLinks">
+        <ion-col size="12" *ngIf="game?.resourceLinks" class="ion-text-center">
           <h3>Resources</h3>
         </ion-col>
         <ion-col *ngFor="let resourceLink of game?.resourceLinks ?? []" size="12">
