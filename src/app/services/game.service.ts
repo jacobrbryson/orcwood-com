@@ -126,6 +126,12 @@ export class GameService {
           url: "https://orcwood.atlassian.net/jira/software/projects/TEC/boards/2",
           icon: "bar-chart-outline"
         }
+      ],
+      nightlyBuilds: [
+        {
+          dateTime: new Date("2024-08-04 23:02:00"),
+          url: "https://storage.googleapis.com/escape-cabin-nightly-builds/2024-08-04%20Nightly%20Escape%20Cabin.zip"
+        }
       ]
     },
     {
@@ -208,7 +214,8 @@ export interface Game {
   html5Url?: string;
   projectManagerKey: string;
   resourceLinks?: ResourceLink[];
-  contributorKeys?: string[]
+  contributorKeys?: string[];
+  nightlyBuilds?: NightlyBuild[];
 }
 
 export interface Image{
@@ -219,4 +226,9 @@ export interface Image{
 export interface ResourceLink {
   url: string;
   icon:string;
+}
+
+export interface NightlyBuild {
+  dateTime: Date;
+  url: string;
 }

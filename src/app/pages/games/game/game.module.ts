@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { GamePageRoutingModule } from './game-routing.module';
 import { GamePage } from './game.page';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { NightlyBuildsComponent } from 'src/app/pages/games/game/components/nightly-builds/nightly-builds.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
     GamePageRoutingModule,
     SharedModule
   ],
-  declarations: [GamePage]
+  declarations: [GamePage,NightlyBuildsComponent]
 })
 export class GamePageModule {}

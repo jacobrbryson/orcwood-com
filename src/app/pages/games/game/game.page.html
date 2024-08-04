@@ -19,23 +19,24 @@
     </ion-col>
     <ion-col size="12" size-md="3">
       <ion-row>
-        <ion-col size="12" class="ion-text-center">
-          <h3>Project Manager</h3>
-          <div class="flex" style="justify-content:center">
-            <img alt="{{ projectManager?.title }}" width="32" height="32" src="assets/{{ projectManager?.image ? projectManager?.image : 'person.jpg' }}" style="border-radius: 50%" />
-            <ion-text>{{ projectManager?.name }}</ion-text>
-          </div>
-        </ion-col>
-        <ion-col size="12" *ngIf="game?.resourceLinks" class="ion-text-center">
-          <h3>Resources</h3>
-        </ion-col>
         <ion-col *ngFor="let resourceLink of game?.resourceLinks ?? []" size="12">
           <ion-button class="flex" href="{{ resourceLink.url }}" target="_blank">
             <ion-icon name="{{ resourceLink.icon }}"></ion-icon>
             <ion-text style="padding-left:8px;">{{ resourceLink.icon == "logo-google" ? 'Shared Drive' : 'Jira Board' }}</ion-text>
           </ion-button>
         </ion-col>
+        
+        <ion-col size="12" class="ion-text-center">
+          <hr style="background:white;margin:16px;"/>
+          <h3>Project Manager</h3>
+          <div class="flex" style="justify-content:center">
+            <img alt="{{ projectManager?.title }}" width="32" height="32" src="assets/{{ projectManager?.image ? projectManager?.image : 'person.jpg' }}" style="border-radius: 50%" />
+            <ion-text>{{ projectManager?.name }}</ion-text>
+          </div>
+        </ion-col>
+        
       </ion-row>
+      <app-nightly-builds *ngIf="game?.nightlyBuilds?.length" [nightlyBuilds]="game?.nightlyBuilds ?? []"></app-nightly-builds>
     </ion-col>
   </ion-row>
 </ion-content>
