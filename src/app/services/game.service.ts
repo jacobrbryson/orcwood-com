@@ -129,8 +129,9 @@ export class GameService {
       ],
       nightlyBuilds: [
         {
-          dateTime: new Date("2024-08-04 23:02:00"),
-          url: "https://storage.googleapis.com/escape-cabin-nightly-builds/2024-08-04%20Nightly%20Escape%20Cabin.zip"
+          dateTime: new Date("2024-08-04"),
+          url: "https://storage.googleapis.com/escape-cabin-nightly-builds/2024-08-04%20Nightly%20Escape%20Cabin.zip",
+          size: "793.4 MB"
         }
       ]
     },
@@ -231,4 +232,5 @@ export interface ResourceLink {
 export interface NightlyBuild {
   dateTime: Date;
   url: string;
+  size: string;
 }
