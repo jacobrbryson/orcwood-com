@@ -9,7 +9,11 @@
         </ion-slide>
       </ion-slides>
           <div *ngIf="game?.html5Url" class="container">
-            <iframe [src]="game?.html5Url ?? '' | safe: 'resourceUrl'" class="responsive-iframe"></iframe>
+            <iframe [src]="game?.html5Url ?? '' | safe: 'resourceUrl'" class="responsive-iframe"
+             frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+            ></iframe>
           </div>
       <ion-row class="ion-justify-content-center">
         <ion-col class="ion-text-center" size="12" size-md="8" size-lg="6">

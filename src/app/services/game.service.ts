@@ -133,7 +133,8 @@ export class GameService {
           url: "https://storage.googleapis.com/escape-cabin-nightly-builds/2024-08-04%20Nightly%20Escape%20Cabin.zip",
           size: "793.4 MB"
         }
-      ]
+      ],
+      html5Url:"https://www.youtube.com/embed/EdLMsgaQCH8?si=WkzWEepOQT6Jnmn1"
     },
     {
     key:"holiday-lockdown",
