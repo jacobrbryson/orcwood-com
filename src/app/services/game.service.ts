@@ -111,9 +111,9 @@ export class GameService {
     {
       key:"escape-cabin",
       image: "games/escape-cabin/banner-square.jpg",
-      title: "Escape Cabin",
+      title: "Cabin Escape",
       releaseDate: new Date("2025-01-01"),
-      description: "You wake up to find yourself trapped in an alpine cabin in the woods with no clear means of escape. You've lost your memory, but it seems you knew this might happen.  Follow the clues to escape and unlock the mystery within.",
+      description: "You wake up to find yourself trapped in an alpine cabin with no clear means of escape. You've lost your memory, but it seems you anticipated that this might happen.  Follow the clues to escape and unlock the mystery within.",
       link: "/games/escape-cabin/",
       images:[],
       projectManagerKey: "jenny-wolfer",
