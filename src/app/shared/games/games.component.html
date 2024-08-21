@@ -10,7 +10,7 @@
         {{ game.description }}
       </ion-card-content>
       <ion-row>
-        <ion-col class="ion-text-center">
+        <ion-col class="ion-text-center ion-padding">
           <ion-button 
             *ngIf="!!game.link" 
             (click)="utilityService.goToLink(game.link)">
