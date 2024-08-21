@@ -3,6 +3,7 @@
     <img src="assets/logo-og-games.svg" alt="Orcwood Logo"/>
   </ion-col>
   <ion-col size="12" size-md="3" class="card">
+    <div class="folded-ribbon"><span class="featured-game">Featured Game</span></div>
     <img src="assets/games/downside-up/du-logo.png" alt="Orcwood Logo" class="ion-padding"/>
     <ion-button (click)="utilityService.goToLink('/games/downside-up')">Play Now</ion-button>
   </ion-col> 
@@ -11,10 +12,8 @@
       <ion-row style="width:100%;height:100%;">
         <ion-col size="12" style="padding:0;">
           <div class="shaded">
-            <div class="ion-padding" style="height:100%">
-              <strong>
-                <ion-text>High Scores</ion-text>
-              </strong>
+            <div class="ion-padding ion-text-center" style="height:100%">
+              <ion-text><strong>High Scores</strong></ion-text>
               <div class="ion-padding high-score-container">
                 <div *ngFor="let highScore of highScores" class="flexItem">
                   <span>{{ highScore.gamerTag }}</span>
