@@ -19,11 +19,18 @@ export class GameService {
       resourceLinks: [
         {
           url: "https://drive.google.com/drive/folders/1N22PJTwOUk3ROdLf2923f2hfSPeCqYE_",
-          icon: "logo-google"
+          icon: "logo-google",
+          title: "Shared Drive"
         },
         {
           url: "https://orcwood.atlassian.net/jira/core/projects/TC/board",
-          icon: "bar-chart-outline"
+          icon: "bar-chart-outline",
+          title: "Jira Board"
+        },
+        {
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=Trivia+Crawler",
+          icon: "list-circle-outline",
+          title: "Playtest Form"
         }
       ]
     },
@@ -39,11 +46,18 @@ export class GameService {
       resourceLinks: [
         {
           url: "https://drive.google.com/drive/folders/1hwBM3k_eq2MaB7hfMw8HWpmVf17vk1Jb",
-          icon: "logo-google"
+          icon: "logo-google",
+          title: "Shared Drive"
         },
         {
           url: "https://orcwood.atlassian.net/jira/core/projects/NA/board",
-          icon: "bar-chart-outline"
+          icon: "bar-chart-outline",
+          title: "Jira Board"
+        },
+        {
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=New+America",
+          icon: "list-circle-outline",
+          title: "Playtest Form"
         }
       ]
     },
@@ -60,11 +74,18 @@ export class GameService {
       resourceLinks: [
         {
           url: "https://drive.google.com/drive/folders/19f_2kUfPJ_f8lqVqfLJgeTArwpvE1IEl",
-          icon: "logo-google"
+          icon: "logo-google",
+          title: "Shared Drive"
         },
         {
           url: "https://orcwood.atlassian.net/jira/core/projects/DU/board",
-          icon: "bar-chart-outline"
+          icon: "bar-chart-outline",
+          title: "Jira Board"
+        },
+        {
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=Downside+Up",
+          icon: "list-circle-outline",
+          title: "Playtest Form"
         }
       ]
     },
@@ -80,11 +101,18 @@ export class GameService {
       resourceLinks: [
         {
           url: "https://drive.google.com/drive/folders/1yqUmUFYlCH03HrSfFOLBg-cCRFI84hPw",
-          icon: "logo-google"
+          icon: "logo-google",
+          title: "Shared Drive"
         },
         {
           url: "https://orcwood.atlassian.net/jira/software/projects/DS/boards/1",
-          icon: "bar-chart-outline"
+          icon: "bar-chart-outline",
+          title: "Jira Board"
+        },
+        {
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=Death+Sentence",
+          icon: "list-circle-outline",
+          title: "Playtest Form"
         }
       ]
     },
@@ -100,11 +128,18 @@ export class GameService {
       resourceLinks: [
         {
           url: "https://drive.google.com/drive/folders/13FulS6tiIzlVpZj4SUc1cvbeJbazXsZA",
-          icon: "logo-google"
+          icon: "logo-google",
+          title: "Shared Drive"
         },
         {
           url: "https://orcwood.atlassian.net/jira/software/projects/JHAT/boards/3",
-          icon: "bar-chart-outline"
+          icon: "bar-chart-outline",
+          title: "Jira Board"
+        },
+        {
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=Jurassic+Hats",
+          icon: "list-circle-outline",
+          title: "Playtest Form"
         }
       ]
     },
@@ -120,11 +155,18 @@ export class GameService {
       resourceLinks: [
         {
           url: "https://drive.google.com/drive/folders/13rDyl6M1uh9momUFXDHGCYDGm8SOg1rw",
-          icon: "logo-google"
+          icon: "logo-google",
+          title: "Shared Drive"
         },
         {
           url: "https://orcwood.atlassian.net/jira/software/projects/TEC/boards/2",
-          icon: "bar-chart-outline"
+          icon: "bar-chart-outline",
+          title: "Jira Board"
+        },
+        {
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=Cabin+Escape",
+          icon: "list-circle-outline",
+          title: "Playtest Form"
         }
       ],
       nightlyBuilds: [
@@ -134,7 +176,7 @@ export class GameService {
           size: "793.4 MB"
         }
       ],
-      html5Url:"https://www.youtube.com/embed/EdLMsgaQCH8?si=WkzWEepOQT6Jnmn1"
+      html5Url:"https://www.youtube.com/embed/EdLMsgaQCH8?si=WkzWEepOQT6Jnmn1",
     },
     {
     key:"holiday-lockdown",
@@ -168,11 +210,13 @@ export class GameService {
     resourceLinks: [
       {
         url: "https://drive.google.com/drive/folders/1eF_ac6fHmYRr5o-hR0gAKv_P57-JeyQI",
-        icon: "logo-google"
+        icon: "logo-google",
+        title: "Shared Drive"
       },
       {
         url: "https://orcwood.atlassian.net/jira/software/projects/HL/boards/5",
-        icon: "bar-chart-outline"
+        icon: "bar-chart-outline",
+        title: "Jira Board"
       }
     ]
   },
@@ -227,7 +271,8 @@ export interface Image{
 
 export interface ResourceLink {
   url: string;
-  icon:string;
+  icon: string;
+  title: string;
 }
 
 export interface NightlyBuild {

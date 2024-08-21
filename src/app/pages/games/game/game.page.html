@@ -26,10 +26,9 @@
         <ion-col *ngFor="let resourceLink of game?.resourceLinks ?? []" size="12">
           <ion-button class="flex" href="{{ resourceLink.url }}" target="_blank">
             <ion-icon name="{{ resourceLink.icon }}"></ion-icon>
-            <ion-text style="padding-left:8px;">{{ resourceLink.icon == "logo-google" ? 'Shared Drive' : 'Jira Board' }}</ion-text>
+            <ion-text style="padding-left:8px;">{{ resourceLink.title }}</ion-text>
           </ion-button>
         </ion-col>
-        
         <ion-col size="12" class="ion-text-center">
           <hr style="background:white;margin:16px;"/>
           <h3>Project Manager</h3>
@@ -38,7 +37,6 @@
             <ion-text>{{ projectManager?.name }}</ion-text>
           </div>
         </ion-col>
-        
       </ion-row>
       <app-nightly-builds *ngIf="game?.nightlyBuilds?.length" [nightlyBuilds]="game?.nightlyBuilds ?? []"></app-nightly-builds>
     </ion-col>
