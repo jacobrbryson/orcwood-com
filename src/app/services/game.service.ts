@@ -144,12 +144,12 @@ export class GameService {
       ]
     },
     {
-      key:"escape-cabin",
+      key:"cabin-escape",
       image: "games/escape-cabin/banner-square.jpg",
       title: "Cabin Escape",
-      releaseDate: new Date("2025-01-01"),
+      releaseDate: new Date("2024-10-29"),
       description: "You wake up to find yourself trapped in an alpine cabin with no clear means of escape. You've lost your memory, but it seems you anticipated that this might happen.  Follow the clues to escape and unlock the mystery within.",
-      link: "/games/escape-cabin/",
+      link: "/games/cabin-escape/",
       images:[],
       projectManagerKey: "jenny-wolfer",
       resourceLinks: [
@@ -172,8 +172,8 @@ export class GameService {
       nightlyBuilds: [
         {
           dateTime: new Date("2024-08-04"),
-          url: "https://storage.googleapis.com/escape-cabin-nightly-builds/2024-08-04%20Nightly%20Escape%20Cabin.zip",
-          size: "793.4 MB"
+          url: "https://storage.googleapis.com/escape-cabin-nightly-builds/2024-08-23%20Nightly%20Escape%20Cabin.zip",
+          size: "800 MB"
         }
       ],
       html5Url:"https://www.youtube.com/embed/EdLMsgaQCH8?si=WkzWEepOQT6Jnmn1",
