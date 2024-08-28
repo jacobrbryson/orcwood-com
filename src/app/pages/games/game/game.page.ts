@@ -12,6 +12,7 @@ export class GamePage {
 
   game:Game | undefined;
   projectManager: Member | undefined;
+  contributors: Member[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -21,6 +22,11 @@ export class GamePage {
     const gameKey = this.route.snapshot.paramMap.get('gameKey');
     this.game = this.gameService.getGames().find((game) => game.key == gameKey);
     this.projectManager = this.teamService.getTeam().find((member) => member.key == this.game?.projectManagerKey || "")
+
+    for(const key of this.game?.contributorKeys ?? []){
+      let member = this.teamService.getTeam().find((member:Member) => member.key == key);
+      if(member) this.contributors.push(member);
+    }
   }
 
   slideOpts = {

@@ -6,6 +6,7 @@ import { GamePageRoutingModule } from './game-routing.module';
 import { GamePage } from './game.page';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { NightlyBuildsComponent } from 'src/app/pages/games/game/components/nightly-builds/nightly-builds.component';
+import { ContributorsComponent } from './components/contributors/contributors.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,10 @@ import { NightlyBuildsComponent } from 'src/app/pages/games/game/components/nigh
     GamePageRoutingModule,
     SharedModule
   ],
-  declarations: [GamePage,NightlyBuildsComponent]
+  declarations: [
+    GamePage,
+    NightlyBuildsComponent,
+    ContributorsComponent
+  ]
 })
 export class GamePageModule {}

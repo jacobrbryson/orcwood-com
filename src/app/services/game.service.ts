@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Member } from './team.service';
 
 @Injectable({
   providedIn: 'root'
@@ -152,6 +151,7 @@ export class GameService {
       link: "/games/cabin-escape/",
       images:[],
       projectManagerKey: "jenny-wolfer",
+      contributorKeys: ["ross-bryson", "mike-wallace"],
       resourceLinks: [
         {
           url: "https://drive.google.com/drive/folders/13rDyl6M1uh9momUFXDHGCYDGm8SOg1rw",

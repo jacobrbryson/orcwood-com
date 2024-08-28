@@ -1,0 +1,6 @@
+<hr class="divider"/>
+<h3>Contributors</h3>
+<div *ngFor="let contributor of contributors" class="profile-list-item">
+  <img alt="{{ contributor?.title }}" width="32" height="32" src="assets/{{ contributor?.image ? contributor?.image : 'person.jpg' }}" style="border-radius: 50%" />
+  <ion-text>{{ contributor?.name }}</ion-text>
+</div>
