@@ -171,9 +171,9 @@ export class GameService {
       ],
       nightlyBuilds: [
         {
-          dateTime: new Date("2024-08-04"),
-          url: "https://storage.googleapis.com/escape-cabin-nightly-builds/2024-08-23%20Nightly%20Build.zip",
-          size: "793.3 MB"
+          dateTime: new Date("2024-08-27"),
+          url: "https://storage.googleapis.com/escape-cabin-nightly-builds/2024-08-27%20Nightly%20Build.zip",
+          size: "793.6 MB"
         }
       ],
       html5Url:"https://www.youtube.com/embed/EdLMsgaQCH8?si=WkzWEepOQT6Jnmn1",
