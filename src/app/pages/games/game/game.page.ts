@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Game, GameService } from 'src/app/services/game.service';
-import { Member, TeamService } from 'src/app/services/team.service';
+import { Game } from 'src/app/interfaces/game';
+import { Member } from 'src/app/interfaces/member';
+import { GameService } from 'src/app/services/game.service';
+import { memberService } from 'src/app/services/member.service';
 
 @Component({
   selector: 'app-game',
@@ -17,14 +19,14 @@ export class GamePage {
   constructor(
     private route: ActivatedRoute,
     private gameService: GameService,
-    private teamService: TeamService
+    private memberService: memberService
   ) { 
     const gameKey = this.route.snapshot.paramMap.get('gameKey');
     this.game = this.gameService.getGames().find((game) => game.key == gameKey);
-    this.projectManager = this.teamService.getTeam().find((member) => member.key == this.game?.projectManagerKey || "")
+    this.projectManager = this.memberService.getTeam().find((member) => member.key == this.game?.projectManagerKey || "")
 
     for(const key of this.game?.contributorKeys ?? []){
-      let member = this.teamService.getTeam().find((member:Member) => member.key == key);
+      let member = this.memberService.getTeam().find((member:Member) => member.key == key);
       if(member) this.contributors.push(member);
     }
   }

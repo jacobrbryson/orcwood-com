@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { NightlyBuild } from 'src/app/services/game.service';
+import { Component, Input } from '@angular/core';
+import { NightlyBuild } from 'src/app/interfaces/game';
 
 @Component({
   selector: 'app-nightly-builds',

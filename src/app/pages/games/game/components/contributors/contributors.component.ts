@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Member } from 'src/app/services/team.service';
+import { Member } from 'src/app/interfaces/member';
 
 @Component({
   selector: 'app-contributors',
