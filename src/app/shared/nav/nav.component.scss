@@ -6,3 +6,11 @@
 .brand-logo:hover{
 	cursor:pointer;
 }
+
+.nav-title{
+	display: flex;
+	align-items: center;
+	margin:8px 8px;
+	gap:8px;
+	font-size:1.25em
+}
