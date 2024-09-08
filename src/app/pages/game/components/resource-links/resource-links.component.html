@@ -1,0 +1,5 @@
+<ion-button *ngFor="let resourceLink of resourceLinks" 
+  class="flex" href="{{ resourceLink.url }}" target="_blank">
+  <ion-icon name="{{ resourceLink.icon }}"></ion-icon>
+  <ion-text style="padding-left:8px;">{{ resourceLink.title }}</ion-text>
+</ion-button>

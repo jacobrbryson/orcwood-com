@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: ':gameKey',
-    loadChildren: () => import('./game/game.module').then( m => m.GamePageModule)
+    loadChildren: () => import('../game/game.module').then( m => m.GamePageModule)
   }
 ];
 

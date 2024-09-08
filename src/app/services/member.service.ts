@@ -6,8 +6,6 @@ import { Member } from '../interfaces/member';
   providedIn: 'root'
 })
 export class memberService {
-  constructor() { }
-
   team: Member[] = data;
 
   getTeam():Member[]{

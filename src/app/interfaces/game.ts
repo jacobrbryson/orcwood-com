@@ -29,3 +29,10 @@ export interface NightlyBuild {
   url: string;
   size: string;
 }
+
+export interface Credit {
+  title:string;
+  link:string;
+  subTitle?:string;
+  subLink:string;
+}

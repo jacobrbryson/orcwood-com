@@ -6,7 +6,6 @@ import { Game } from '../interfaces/game';
   providedIn: 'root'
 })
 export class GameService {
-
   games: Game[] = JSON.parse(JSON.stringify(data));
 
   getGames():Game[]{

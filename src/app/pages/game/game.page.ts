@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Game } from 'src/app/interfaces/game';
+import { Credit, Game } from 'src/app/interfaces/game';
 import { Member } from 'src/app/interfaces/member';
 import { GameService } from 'src/app/services/game.service';
 import { memberService } from 'src/app/services/member.service';
@@ -11,10 +11,10 @@ import { memberService } from 'src/app/services/member.service';
   styleUrls: ['./game.page.scss'],
 })
 export class GamePage {
-
   game:Game | undefined;
   projectManager: Member | undefined;
   contributors: Member[] = [];
+  credits:Credit[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -30,10 +30,4 @@ export class GamePage {
       if(member) this.contributors.push(member);
     }
   }
-
-  slideOpts = {
-    initialSlide: 1,
-    speed: 400
-  };
-
 }

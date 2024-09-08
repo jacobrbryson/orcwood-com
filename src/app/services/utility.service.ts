@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class UtilityService {
-
   constructor(private router: Router) { }
 
   goToLink(link:string | undefined){
