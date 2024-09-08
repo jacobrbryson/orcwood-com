@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Member } from 'src/app/interfaces/member';
-import { memberService } from 'src/app/services/member.service';
+import { MemberService } from 'src/app/services/member.service';
 
 @Component({
   selector: 'shared-team',
@@ -9,7 +9,7 @@ import { memberService } from 'src/app/services/member.service';
 export class TeamComponent {
   team:Member[];
 
-  constructor(private memberService: memberService){
+  constructor(private memberService: MemberService){
     this.team = this.memberService.getTeam();
   }
 }

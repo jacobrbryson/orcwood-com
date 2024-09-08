@@ -1,3 +1,42 @@
-<p>
-  credits works!
-</p>
+<ion-row>
+  <ion-col size="12" class="ion-text-center">
+    <hr class="divider"/>
+    <h3>
+      Credits
+    </h3>
+    <ion-list>
+      <ion-item *ngFor="let credit of credits?.audio">
+        <ion-icon aria-hidden="true" name="musical-note-outline" slot="start"></ion-icon>
+        <div>
+          <a href="{{credit.link}}">
+            <h6>
+              {{credit.title}}
+            </h6>
+          </a>
+          <a *ngIf="credit.subLink?.length" href="{{credit.subLink}}" class="small muted">
+            {{credit.subTitle}}
+          </a>
+          <span *ngIf="!credit.subLink?.length" class="small muted">
+            {{credit.subTitle}}
+          </span>
+        </div>
+      </ion-item>
+      <ion-item *ngFor="let credit of credits?.assets">
+        <ion-icon aria-hidden="true" name="cube-outline" slot="start"></ion-icon>
+        <div>
+          <a href="{{credit.link}}">
+            <h6>
+              {{credit.title}}
+            </h6>
+          </a>
+          <a *ngIf="credit.subLink?.length" href="{{credit.subLink}}" class="small muted">
+            {{credit.subTitle}}
+          </a>
+          <p *ngIf="!credit.subLink?.length" class="small muted">
+            {{credit.subTitle}}
+          </p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-col>
+</ion-row>

@@ -11,6 +11,7 @@ export interface Game {
   resourceLinks?: ResourceLink[];
   contributorKeys?: string[];
   nightlyBuilds?: NightlyBuild[];
+  credits?: Credits;
 }
 
 export interface Image{
@@ -30,9 +31,15 @@ export interface NightlyBuild {
   size: string;
 }
 
+export interface Credits {
+  gameKey:string;
+  audio:Credit[];
+  assets:Credit[];
+}
+
 export interface Credit {
   title:string;
   link:string;
-  subTitle?:string;
-  subLink:string;
+  subTitle:string;
+  subLink?:string;
 }

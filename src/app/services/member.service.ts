@@ -5,7 +5,7 @@ import { Member } from '../interfaces/member';
 @Injectable({
   providedIn: 'root'
 })
-export class memberService {
+export class MemberService {
   team: Member[] = data;
 
   getTeam():Member[]{
