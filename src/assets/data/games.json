@@ -169,9 +169,16 @@
 		],
 		"nightlyBuilds": [
 			{
-				"dateTime": "2024-08-27",
-				"url": "https://storage.googleapis.com/escape-cabin-nightly-builds/2024-08-27%20Nightly%20Build.zip",
-				"size": "793.6 MB"
+				"icon": "logo-windows",
+				"dateTime": "2024-09-15",
+				"url": "https://storage.googleapis.com/escape-cabin-nightly-builds/windows/Cabin%20Escape%200.1.119.zip",
+				"size": "787.5 MB"
+			},
+			{
+				"icon":"logo-apple",
+				"dateTime": "2024-09-15",
+				"url": "https://storage.googleapis.com/escape-cabin-nightly-builds/mac/Cabin%20Escape%200.1.119.zip",
+				"size": "796.4 MB"
 			}
 		],
 		"html5Url":"https://www.youtube.com/embed/EdLMsgaQCH8?si=WkzWEepOQT6Jnmn1"

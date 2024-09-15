@@ -26,6 +26,7 @@ export interface ResourceLink {
 }
 
 export interface NightlyBuild {
+  icon: string;
   dateTime: Date;
   url: string;
   size: string;

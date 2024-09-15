@@ -8,7 +8,7 @@
       <ion-item *ngFor="let nightlyBuild of nightlyBuilds" style="width:100%;">
         <a href="{{ nightlyBuild.url }}" target="_blank" class="flex" style="width:100%;justify-content:space-between">
           <span class="flex">
-            <ion-icon name="cloud-download-outline"/>
+            <ion-icon name="{{ nightlyBuild.icon}}"/>
             {{ nightlyBuild.dateTime | date:'shortDate' }}
           </span>
           {{ nightlyBuild.size }}
