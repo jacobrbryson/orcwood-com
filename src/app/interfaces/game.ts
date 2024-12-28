@@ -14,15 +14,16 @@ export interface Game {
   credits?: Credits;
 }
 
-export interface Image{
-  src:string;
-  alt?:string;
+export interface Image {
+  src: string;
+  alt?: string;
 }
 
 export interface ResourceLink {
   url: string;
   icon: string;
   title: string;
+  admin?: boolean;
 }
 
 export interface NightlyBuild {
@@ -33,14 +34,14 @@ export interface NightlyBuild {
 }
 
 export interface Credits {
-  gameKey:string;
-  audio:Credit[];
-  assets:Credit[];
+  gameKey: string;
+  audio: Credit[];
+  assets: Credit[];
 }
 
 export interface Credit {
-  title:string;
-  link:string;
-  subTitle:string;
-  subLink?:string;
+  title: string;
+  link: string;
+  subTitle: string;
+  subLink?: string;
 }

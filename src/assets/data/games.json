@@ -28,7 +28,7 @@
       {
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=Trivia+Crawler",
         "icon": "list-circle-outline",
-        "title": "Playtest Form"
+        "title": "Beta-Tester Form"
       }
     ]
   },
@@ -56,7 +56,7 @@
       {
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=New+America",
         "icon": "list-circle-outline",
-        "title": "Playtest Form"
+        "title": "Beta-Tester Form"
       }
     ],
     "html5Url": "https://www.youtube.com/embed/3RkMNHsjq1c?si=iNYIKFTuz_Dc18l9"
@@ -86,7 +86,7 @@
       {
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=Downside+Up",
         "icon": "list-circle-outline",
-        "title": "Playtest Form"
+        "title": "Beta-Tester Form"
       }
     ]
   },
@@ -114,7 +114,7 @@
       {
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=Death+Sentence",
         "icon": "list-circle-outline",
-        "title": "Playtest Form"
+        "title": "Beta-Tester Form"
       }
     ]
   },
@@ -132,7 +132,7 @@
       {
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=Jurassic+Hats",
         "icon": "list-circle-outline",
-        "title": "Playtest Form"
+        "title": "Beta-Tester Form"
       }
     ]
   },
@@ -148,19 +148,28 @@
     "contributorKeys": ["ross-bryson", "mike-wallace"],
     "resourceLinks": [
       {
+        "url": "https://store.steampowered.com/app/3150770/Cabin_Escape",
+        "icon": "logo-steam",
+        "title": "Play on Steam",
+        "admin": false
+      },
+      {
         "url": "https://drive.google.com/drive/folders/13rDyl6M1uh9momUFXDHGCYDGm8SOg1rw",
         "icon": "logo-google",
-        "title": "Shared Drive"
+        "title": "Shared Drive",
+        "admin": true
       },
       {
         "url": "https://orcwood.atlassian.net/jira/software/projects/TEC/boards/2",
         "icon": "bar-chart-outline",
-        "title": "Jira Board"
+        "title": "Jira Board",
+        "admin": true
       },
       {
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=Cabin+Escape",
         "icon": "list-circle-outline",
-        "title": "Playtest Form"
+        "title": "Beta-tester Form",
+        "admin": false
       }
     ],
     "html5Url": "https://www.youtube.com/embed/EdLMsgaQCH8?si=WkzWEepOQT6Jnmn1"
