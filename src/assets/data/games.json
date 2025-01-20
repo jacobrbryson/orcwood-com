@@ -127,8 +127,21 @@
     "link": "/games/jurassic-hats/",
     "images": [],
     "projectManagerKey": "ross-bryson",
-    "contributorKeys": ["jenny-wolfer", "mike-wallace"],
+    "contributorKeys": ["jenny-wolfer", "mike-wallace", "livia-wolfer"],
+    "nightlyBuilds": [
+      {
+        "icon": "logo-windows",
+        "dateTime": "2025-01-20",
+        "url": "https://storage.googleapis.com/jurassic-hats-nightly-builds/windows/jurassic-hats-2025-01-20.zip",
+        "size": "198 MB"
+      }
+    ],
     "resourceLinks": [
+      {
+        "url": "https://www.amazon.com/Orcwood-Jurassic-Hats/dp/B0CBJ2FGHX",
+        "icon": "logo-amazon",
+        "title": "Play on Amazon"
+      },
       {
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSd8w9wxZ0Gxjp7T58yqxsmqHB7E9DFhvxRneUXNzqVyeJitbw/viewform?usp=pp_url&entry.98158052=Jurassic+Hats",
         "icon": "list-circle-outline",
