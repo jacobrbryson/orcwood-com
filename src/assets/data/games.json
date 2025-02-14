@@ -100,6 +100,14 @@
     "images": [],
     "projectManagerKey": "allen-clawson",
     "contributorKeys": ["ross-bryson", "mike-wallace", "jon-wilson-lee"],
+    "nightlyBuilds": [
+      {
+        "icon": "logo-windows",
+        "dateTime": "2025-02-14",
+        "url": "https://storage.googleapis.com/death-sentence-nightly-builds/Death%20Sentence.zip",
+        "size": "1.7 GB"
+      }
+    ],
     "resourceLinks": [
       {
         "url": "https://drive.google.com/drive/folders/1yqUmUFYlCH03HrSfFOLBg-cCRFI84hPw",
