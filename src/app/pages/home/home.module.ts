@@ -6,6 +6,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { BannerComponent } from './components/banner/banner.component';
+import { Winter2026BannerComponent } from './components/banner/2026-winter/winter-banner.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { BannerComponent } from './components/banner/banner.component';
   ],
   declarations: [
     HomePage, 
-    BannerComponent]
+    BannerComponent,
+    Winter2026BannerComponent]
 })
 export class HomePageModule {}

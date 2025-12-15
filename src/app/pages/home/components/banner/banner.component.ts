@@ -8,6 +8,8 @@ import { UtilityService } from 'src/app/services/utility.service';
 })
 
 export class BannerComponent implements OnInit {
+  private readonly winterBannerEndDate = new Date(2026, 2, 21); // March 21, 2026 (month is 0-indexed)
+  showWinterBanner = false;
   highScores:any=[{
     gamerTag: "Oxeblood",
     time: "3:15.456"
@@ -41,6 +43,8 @@ export class BannerComponent implements OnInit {
   }];
   constructor(public utilityService: UtilityService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.showWinterBanner = new Date() < this.winterBannerEndDate;
+  }
   
 }

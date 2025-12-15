@@ -1,0 +1,211 @@
+.winter-banner {
+  position: relative;
+  min-height: 360px;
+  width: 100%;
+  margin-bottom: 24px;
+  background: no-repeat center/cover url("/assets/home/WinterArtChallenge-2026.png");
+  color: #f4f7ff;
+  overflow: hidden;
+  border-radius: 12px;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.winter-banner__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 360px;
+  padding: 24px;
+  text-align: right;
+}
+
+.winter-banner__copy {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.winter-banner__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.92;
+}
+
+.winter-banner__headline {
+  margin: 0;
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  line-height: 1.05;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  letter-spacing: 0.01em;
+}
+
+.winter-banner__subhead {
+  font-weight: 300;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.winter-banner__link {
+  display: inline-flex;
+  align-items: center;
+  color: #f4f7ff;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: rgba(244, 247, 255, 0.65);
+  margin-top: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 120ms ease, text-decoration-color 120ms ease, transform 120ms ease;
+}
+
+.winter-banner__link:hover,
+.winter-banner__link:focus-visible {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+}
+
+.winter-banner__link:active {
+  transform: translateY(1px);
+}
+
+.winter-banner__cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+  align-items: flex-end;
+}
+
+.winter-banner__discord-note {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.92;
+  max-width: 320px;
+}
+
+.winter-banner__cta {
+  align-self: flex-end;
+  --background: #f2f5ff;
+  --color: #0a0f1c;
+  --box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+ion-modal {
+  --max-width: 720px;
+  --height: auto;
+  --min-height: 60vh;
+  --border-radius: 18px;
+  --backdrop-opacity: 0.55;
+  --background: #0b1020;
+  color: #e9edf7;
+}
+
+.participate-modal {
+  padding: 20px 22px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.participate-modal__header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.participate-modal__icon {
+  width: 88px;
+  height: 88px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  display: grid;
+  place-items: center;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
+}
+
+.participate-modal__title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.participate-modal__eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  color: #a5b4d8;
+}
+
+.participate-modal__title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.participate-modal__dates {
+  margin: 0;
+  color: #cdd5ec;
+  font-size: 0.95rem;
+}
+
+.participate-modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.participate-modal__body h3 {
+  margin: 10px 0 0 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f4f7ff;
+}
+
+.participate-modal__body ul {
+  margin: 6px 0 0 18px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.participate-modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .winter-banner__content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .winter-banner__copy {
+    align-items: center;
+    text-align: center;
+  }
+
+  .winter-banner__subhead {
+    justify-content: center;
+  }
+
+  .winter-banner__cta-group {
+    align-items: center;
+  }
+}

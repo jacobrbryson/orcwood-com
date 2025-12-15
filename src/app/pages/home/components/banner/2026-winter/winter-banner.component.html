@@ -1,0 +1,92 @@
+<ion-row class="winter-banner">
+  <ion-col size="12" class="winter-banner__content">
+    <div class="winter-banner__copy">
+      <p class="winter-banner__eyebrow">Orcwood Games presents our</p>
+      <h1 class="winter-banner__headline">
+        Winter 2026
+        <span class="winter-banner__subhead">
+          Self-Portrait Challenge
+        </span>
+      </h1>
+      <a class="winter-banner__link" role="button" (click)="openDetails()">
+        More information
+      </a>
+      <div class="winter-banner__cta-group">
+        <ion-button
+          color="light"
+          fill="solid"
+          class="winter-banner__cta"
+          href="https://discord.gg/FXe9yptDnt"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Join us on Discord
+        </ion-button>
+      </div>
+    </div>
+  </ion-col>
+</ion-row>
+
+<ion-modal [isOpen]="detailsOpen" (didDismiss)="closeDetails()">
+  <ng-template>
+    <div class="participate-modal">
+      <div class="participate-modal__header">
+        <div class="participate-modal__icon" aria-hidden="true">
+          <svg viewBox="0 0 200 140" role="presentation" focusable="false">
+            <rect x="18" y="18" width="120" height="104" rx="8" fill="#f7f0e8" stroke="#d7c7b8" stroke-width="4"/>
+            <rect x="26" y="32" width="104" height="12" rx="4" fill="#e5d8cb"/>
+            <rect x="26" y="52" width="82" height="10" rx="4" fill="#e5d8cb"/>
+            <rect x="26" y="70" width="96" height="10" rx="4" fill="#e5d8cb"/>
+            <rect x="26" y="88" width="78" height="10" rx="4" fill="#e5d8cb"/>
+            <path d="M150 32c-6 22-10 38-22 62l24-16 12 14c-6 10-16 20-32 26l-8-10-20 6c16-24 28-52 40-82z" fill="#2c3f73"/>
+            <path d="M142 102c6 0 12 5 12 12s-6 12-12 12-12-5-12-12 6-12 12-12z" fill="#fefefe" stroke="#1a2747" stroke-width="4"/>
+            <path d="M152 110c-6 2-12 5-16 10" stroke="#1a2747" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="participate-modal__title-block">
+          <p class="participate-modal__eyebrow">Winter Introspection Art Challenge</p>
+          <h2 class="participate-modal__title">How to participate</h2>
+          <p class="participate-modal__dates">December 21 – March 21 (Solstice to Equinox)</p>
+        </div>
+      </div>
+      <div class="participate-modal__body">
+        <p>
+          Welcome to Winter Introspection—a gentle, community-driven art challenge designed for reflection, creativity, and play.
+        </p>
+        <p><strong>Your challenge:</strong> Create three self-portraits, each in a different medium, between December 21st and March 21st.</p>
+
+        <h3>Guidelines:</h3>
+        <ul>
+          <li>Three unique media: You choose what counts as a different medium. Pencil vs. charcoal vs. Bic pen? Fine. Watercolor, digital, collage, clay—also fine.</li>
+          <li>No photographs as one of the three primary media. (You can photograph your artwork for submission.)</li>
+          <li>This is not a judged competition. Submissions are shared only for community, encouragement, and accountability.</li>
+          <li>No policing. Everyone defines their own level of challenge, adds their own constraints if desired, and supports others without critique unless explicitly invited.</li>
+          <li>Early submissions are welcomed. If someone finishes all three on January 1st—fantastic.</li>
+        </ul>
+
+        <h3>Submission Milestones:</h3>
+        <ul>
+          <li>Self-Portrait #1: Due January 21</li>
+          <li>Self-Portrait #2: Due February 22</li>
+          <li>Self-Portrait #3: Due March 21 (Equinox)</li>
+        </ul>
+
+        <p>
+          The goal is simple: to make art, explore ourselves, and notice how the light slowly returns as winter unfolds. Share progress, ideas, struggles, and wins freely—this is a space for connection and introspection.
+        </p>
+      </div>
+      <div class="participate-modal__footer">
+        <ion-button fill="clear" color="medium" (click)="closeDetails()">Close</ion-button>
+        <ion-button
+          color="light"
+          fill="solid"
+          href="https://discord.gg/FXe9yptDnt"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Join us on Discord
+        </ion-button>
+      </div>
+    </div>
+  </ng-template>
+</ion-modal>
