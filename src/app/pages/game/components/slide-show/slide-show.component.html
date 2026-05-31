@@ -3,3 +3,17 @@
     <img src="assets/{{image.src}}" alt="{{ image?.alt }}"/>
   </ion-slide>
 </ion-slides>
+<ion-row class="ion-justify-content-between ion-align-items-center ion-padding-top">
+  <ion-col size="auto">
+    <ion-button fill="outline" color="medium" (click)="slidePrev()">
+      <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+      Previous
+    </ion-button>
+  </ion-col>
+  <ion-col size="auto">
+    <ion-button fill="outline" color="medium" (click)="slideNext()">
+      Next
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-button>
+  </ion-col>
+</ion-row>

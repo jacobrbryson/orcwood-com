@@ -1,5 +1,41 @@
 [
   {
+    "key": "family-chores",
+    "image": "games/family-chores/banner-square2.png",
+    "title": "Family Chores",
+    "releaseDate": "2026-01-01",
+    "description": "A family chore system with flexible approvals, rewards, quests, and live activity that keeps parents in control while making progress feel tangible for kids.",
+    "link": "/games/family-chores/",
+    "images": [
+      {
+        "src": "games/family-chores/avatar.png",
+        "alt": "Family Chores avatar customization screen."
+      },
+      {
+        "src": "games/family-chores/confetti.png",
+        "alt": "Family Chores celebration effects and rewards."
+      },
+      {
+        "src": "games/family-chores/family-rewards.png",
+        "alt": "Family Chores rewards and family progress screen."
+      },
+      {
+        "src": "games/family-chores/theme.png",
+        "alt": "Family Chores theme and personalization options."
+      }
+    ],
+    "projectManagerKey": "ross-bryson",
+    "contributorKeys": ["ross-bryson"],
+    "resourceLinks": [
+      {
+        "url": "https://family-chores.app/",
+        "icon": "globe-outline",
+        "title": "Open App",
+        "admin": false
+      }
+    ]
+  },
+  {
     "key": "trivia-crawler",
     "image": "games/trivia-crawler/banner-square.jpg",
     "title": "Trivia Crawler",

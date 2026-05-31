@@ -10,6 +10,11 @@ export class UtilityService {
   goToLink(link:string | undefined){
     if(!link) return;
 
+    if(/^https?:\/\//.test(link)){
+      window.open(link, '_blank', 'noopener');
+      return;
+    }
+
     this.router.navigate([link]);
   }
 }
