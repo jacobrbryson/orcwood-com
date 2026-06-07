@@ -62,6 +62,10 @@
 			"href": "https://www.linkedin.com/in/ross-bryson-software-engineer",
 			"icon": "logo-linkedin",
 			"alt": "LinkedIn"
+		},{
+			"href": "https://rossbryson.com",
+			"icon": "globe-outline",
+			"alt": "Portfolio"
 		}]
 	},{
 		"key":"mike-wallace",

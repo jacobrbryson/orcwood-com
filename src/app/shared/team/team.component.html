@@ -7,6 +7,6 @@
       <ion-card-subtitle>
         "{{ member.title }}"
       </ion-card-subtitle>
-      <ion-button *ngFor="let link of member.social"shape="round" href="{{ link.href }}" target="_blank"><ion-icon name="{{ link.icon }}"></ion-icon></ion-button>
+      <ion-button *ngFor="let link of member.social" shape="round" href="{{ link.href }}" target="_blank" rel="noopener" [attr.aria-label]="link.alt"><ion-icon name="{{ link.icon }}" aria-hidden="true"></ion-icon></ion-button>
   </ion-col>
 </ion-row>
