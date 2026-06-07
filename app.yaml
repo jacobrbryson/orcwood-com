@@ -1,11 +1,17 @@
 runtime: nodejs24
 handlers:
-# Serve all static files with url ending with a file extension
+# Serve all static files with a url ending in a file extension (js, css, images, robots.txt, sitemap.xml, ...)
 - url: /(.*\..+)$
   static_files: www/\1
   upload: www/(.*\..+)$
 
-# Catch all handler to index.html
+# Serve prerendered routes: a clean URL maps to that route's prerendered index.html
+# (e.g. /games/family-chores -> www/games/family-chores/index.html)
+- url: /(.+?)/?$
+  static_files: www/\1/index.html
+  upload: www/(.*)/index.html
+
+# Catch-all to the app shell (home / client-side routing fallback)
 - url: /.*
   static_files: www/index.html
   upload: www/index.html

@@ -3,7 +3,7 @@ steps:
   args: ['install']
 
 - name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'build']
+  args: ['run', 'prerender']
 
 #  - name: 'gcr.io/cloud-builders/gsutil'
 #    args: ['-m', 'cp', '-r', 'www/*', 'gs://www-orcwood-com/']

@@ -1,9 +1,15 @@
 <ion-row>
   <ion-col *ngFor="let game of games" size="12" size-md="6" size-lg="4" size-xl="3" class="ion-padding">
     <ion-card>
-      <img alt="{{ game.title }}" src="assets/{{ game.image }}" />
+      <a *ngIf="game.link" routerLink="/games/{{ game.key }}" [attr.aria-label]="game.title">
+        <img alt="{{ game.title }}" src="assets/{{ game.image }}" />
+      </a>
+      <img *ngIf="!game.link" alt="{{ game.title }}" src="assets/{{ game.image }}" />
       <ion-card-header>
-        <ion-card-title>{{ game.title }}</ion-card-title>
+        <ion-card-title>
+          <a *ngIf="game.link" routerLink="/games/{{ game.key }}">{{ game.title }}</a>
+          <ng-container *ngIf="!game.link">{{ game.title }}</ng-container>
+        </ion-card-title>
         <ion-card-subtitle *ngIf="!game.releaseDate"><i>Coming Soon!</i></ion-card-subtitle>
       </ion-card-header>
       <ion-card-content style="height:100px; overflow-y:auto">
@@ -11,9 +17,9 @@
       </ion-card-content>
       <ion-row>
         <ion-col class="ion-text-center ion-padding">
-          <ion-button 
-            *ngIf="!!game.link" 
-            (click)="utilityService.goToLink(game.link)">
+          <ion-button
+            *ngIf="!!game.link"
+            routerLink="/games/{{ game.key }}">
             View Game
           </ion-button>
         </ion-col>

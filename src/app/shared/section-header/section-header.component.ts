@@ -7,4 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class SectionHeaderComponent {
   @Input() title: string | undefined;
+  /** Heading level to render. Use "1" for a page's primary heading. */
+  @Input() level: '1' | '2' = '2';
 }

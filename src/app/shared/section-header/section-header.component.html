@@ -1,4 +1,6 @@
-<h2 
-	class="pt-5 section-header">
+<h1 *ngIf="level === '1'" class="pt-5 section-header">
+	{{ title }}
+</h1>
+<h2 *ngIf="level === '2'" class="pt-5 section-header">
 	{{ title }}
 </h2>

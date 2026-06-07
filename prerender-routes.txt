@@ -1,0 +1,14 @@
+/
+/games
+/team
+/games/family-chores
+/games/trivia-crawler
+/games/new-america
+/games/downside-up
+/games/death-sentence
+/games/jurassic-hats
+/games/cabin-escape
+/games/holiday-lockdown
+/games/second-wind
+/games/many-waterfalls
+/games/tea-island

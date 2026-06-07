@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { UtilityService } from 'src/app/services/utility.service';
 
 @Component({
   selector: 'home-banner',
@@ -41,7 +40,7 @@ export class BannerComponent implements OnInit {
     gamerTag: "TREX",
     time: "4:45.333"
   }];
-  constructor(public utilityService: UtilityService) { }
+  constructor() { }
 
   ngOnInit() {
     this.showWinterBanner = new Date() < this.winterBannerEndDate;
